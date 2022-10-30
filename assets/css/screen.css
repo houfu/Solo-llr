@@ -3,13 +3,14 @@
 
 :root {
     --font-sans: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-    --font-serif: Libre Baskerville, Georgia, Times, serif;
+    --font-serif: equity_a, Georgia, Times, serif;
     --font-mono: JetBrains Mono, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     --color-primary-text: var(--color-darker-gray);
-    --color-secondary-text-dark: rgba(0, 0, 0, 0.4);
-    --color-secondary-text-light: rgba(255, 255, 255, 0.64);
+    --color-secondary-text-dark: rgba(90, 98, 144, 0.4);
+    --color-secondary-text-light: rgba(121, 152, 199, 0.64);
     --color-secondary-text: var(--color-secondary-text-dark);
     --color-border: rgba(0, 0, 0, 0.08);
+    --color-light-background: rgba(215, 214, 194 ,0.4);
     --gap: clamp(24px, 1.7032rem + 1.9355vw, 48px);
     --head-nav-gap: 32px;
     --container-width: 1440px;
@@ -606,6 +607,19 @@ figcaption {
     grid-column: 4 / span 9;
     margin-top: 0;
     margin-bottom: clamp(4.8rem, 1.43vw + 4.11rem, 6.4rem);
+}
+
+.gh-content a {
+    color: var(--color-secondary-text);
+    text-decoration: underline;
+    word-break: break-word;
+}
+
+:not(pre) > code {
+    padding: 0.4rem;
+    color: var(--color-secondary-text);
+    background-color: var(--color-light-background);
+    border-radius: 3px;
 }
 
 .gh-article-title {
